@@ -15,11 +15,12 @@ export const siteConfig = {
   location: process.env.NEXT_PUBLIC_LOCATION || "Türkiye",
 };
 
-export const whatsappNumber = (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "").replace(/\D/g, "");
+export const whatsappNumber = (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+90 552 423 11 23").replace(/\D/g, "");
 
-export function whatsappHref(message: string) {
+export function whatsappHref(message: string = "") {
+  const msg = message || "Merhabalar, web siteniz üzerinden size ulaşıyorum";
   if (!/^\d{10,15}$/.test(whatsappNumber)) return "/iletisim#whatsapp";
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
 }
 
 export function absoluteUrl(path = "") {

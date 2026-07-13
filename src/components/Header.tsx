@@ -25,6 +25,9 @@ export function Header() {
             <span><TruckIcon width={17} height={17} /> Türkiye geneli gönderim bilgisi</span>
           </div>
           <div className="utility-bar__social">
+            <a href={whatsapp} {...(whatsappExternal ? { target: "_blank", rel: "noreferrer" } : {})} aria-label="WhatsApp İletişim">
+              <WhatsAppIcon width={18} height={18} /> <span>WhatsApp: +90 552 423 11 23</span>
+            </a>
             <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" aria-label={`Instagram ${siteConfig.instagramHandle}`}>
               <InstagramIcon width={18} height={18} /> <span>{siteConfig.instagramHandle}</span>
             </a>
