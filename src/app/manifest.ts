@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Yağmurun Doğası",
     short_name: "Yağmurun Doğası",
-    description: "Doğal köy ürünleri ve ev yapımı lezzetler hakkında bilgilendirme sitesi.",
+    description: "Yağmur Hanım'ın girişimiyle köy ürünlerini ve ev yapımı lezzetleri bir araya getiren marka.",
     start_url: "/",
     display: "standalone",
     background_color: "#fffdf8",

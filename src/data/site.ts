@@ -5,8 +5,8 @@ export const siteConfig = {
   name: "Yağmurun Doğası",
   shortName: "Yağmurun Doğası",
   description:
-    "Dut ürünleri, kurutmalık sebzeler, bitkiler, köy kahvaltılıkları ve ev yapımı lezzetler hakkında şeffaf ürün bilgisi sunan bilgilendirme sitesi.",
-  slogan: "Doğanın en güzel lezzetleri, köyümüzden sofranıza...",
+    "Girişimci Yağmur Hanım'ın yaklaşımıyla köy ürünlerini ve ev yapımı lezzetleri bir araya getiren; ürün bilgisini şeffaf biçimde paylaşan marka.",
+  slogan: "Yağmur'un özeni, doğanın lezzeti.",
   instagramHandle: "@yagmurdandogal2026",
   instagramUrl: "https://www.instagram.com/yagmurdandogal2026/",
   siteUrl: resolvedSiteUrl.replace(/\/$/, ""),

@@ -56,14 +56,14 @@ export default function HomePage() {
       <section className="hero">
         <div className="container hero__grid">
           <div className="hero__content">
-            <p className="eyebrow"><LeafIcon width={18} height={18} /> Köyden gelen, bilgisi açık lezzetler</p>
-            <h1>Doğanın en güzel lezzetleri, <em>köyümüzden sofranıza...</em></h1>
+            <p className="eyebrow"><LeafIcon width={18} height={18} /> Yağmur Hanım’ın girişimi, bilgisi açık lezzetler</p>
+            <h1>Köyün gerçek lezzetleri, <em>Yağmur’un özeniyle sofranıza...</em></h1>
             <p className="hero__lead">
-              Dut ürünlerinden kurutmalık sebzelere, bitki çaylarından ev eriştesine kadar ürünleri tanıyın; içerik, gramaj ve gönderim bilgisini doğrudan bizden öğrenin.
+              Yağmurun Doğası, adını markanın arkasındaki girişimci Yağmur Hanım’dan alır. Dut ürünlerinden ev eriştesine uzanan seçkiyi içerik, gramaj ve gönderim bilgileriyle tanıyın.
             </p>
             <div className="hero__actions">
               <Link className="button button--primary" href="/urunler">Ürünleri İncele <ArrowRightIcon /></Link>
-              <Link className="button button--secondary" href="/hakkimizda">Hikâyemizi Oku</Link>
+              <Link className="button button--secondary" href="/hakkimizda">Yağmur’un Hikâyesi</Link>
             </div>
             <ul className="hero__checks" aria-label="Bilgilendirme ilkeleri">
               <li><CheckIcon /> İçerik ve alerjen bilgisi</li>
@@ -75,7 +75,7 @@ export default function HomePage() {
             <Image src="/images/hero-orchard.webp" alt="Çiçekli meyve bahçesinin arkasında köy manzarası" fill priority sizes="(max-width: 900px) 100vw, 48vw" />
             <div className="hero__visual-card">
               <span className="hero__visual-icon"><VillageIcon /></span>
-              <div><strong>Mevsimi ve kaynağı belli</strong><span>Parti bilgisi sipariş öncesinde teyit edilir.</span></div>
+              <div><strong>Yağmur’un seçkisi</strong><span>Kaynak ve parti bilgisi sipariş öncesinde teyit edilir.</span></div>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
       <section className="trust-strip" aria-label="Hizmet özellikleri">
         <div className="container trust-strip__grid">
           <div><LeafIcon /><span><strong>Şeffaf Ürün Bilgisi</strong><small>İçerik ve menşei teyidi</small></span></div>
-          <div><VillageIcon /><span><strong>Küçük Üretici Yaklaşımı</strong><small>Parti ve mevsim odaklı</small></span></div>
+          <div><VillageIcon /><span><strong>Yağmur’un Seçkisi</strong><small>Küçük üretici ve mevsim odaklı</small></span></div>
           <div><BoxIcon /><span><strong>Özenli Paketleme</strong><small>Ürüne uygun ambalaj</small></span></div>
           <div><TruckIcon /><span><strong>Gönderim Bilgisi</strong><small>Teslimat öncesi netleştirme</small></span></div>
           <div><WhatsAppIcon /><span><strong>WhatsApp İletişim</strong><small>Hızlı ürün danışmanlığı</small></span></div>
@@ -118,19 +118,19 @@ export default function HomePage() {
         <div className="container story-grid">
           <div className="story-image">
             <Image src="/images/story-herbal-tea.webp" alt="Ahşap masada cam demlik, kurutulmuş bitkiler ve çay malzemeleri" fill sizes="(max-width: 900px) 100vw, 48vw" />
-            <div className="story-image__label"><LeafIcon /> Sade, sıcak ve şeffaf</div>
+            <div className="story-image__label"><LeafIcon /> Yağmur’un seçkisi</div>
           </div>
           <div className="story-content">
-            <p className="eyebrow">Yağmurun Doğası yaklaşımı</p>
-            <h2>“Doğal” demenin ötesinde, ürünü gerçekten anlatmak.</h2>
-            <p>Bir ürüne güvenmek için yalnızca güzel bir fotoğraf yetmez. Nasıl üretildiği, ne içerdiği, nasıl saklanacağı ve size hangi koşullarda ulaşacağı da bilinmelidir.</p>
-            <p>Bu nedenle ürün sayfalarında abartılı sağlık iddiaları yerine kullanım, içerik, alerjen, saklama ve dönemsel stok bilgilerine yer veriyoruz.</p>
+            <p className="eyebrow">İsmin ardındaki girişimci</p>
+            <h2>Adını Yağmur Hanım’dan, karakterini doğaya duyduğu saygıdan alır.</h2>
+            <p>Buradaki “Yağmur”, bir doğa olayını değil markanın arkasındaki girişimciyi anlatır. “Doğası” ise ürünleri kaynağına, emeğe ve kendi karakterine saygıyla sunma yaklaşımını temsil eder.</p>
+            <p>Bu kişisel yaklaşım; abartılı sağlık iddiaları yerine kullanım, içerik, alerjen, saklama ve dönemsel stok bilgilerini açıkça paylaşmayı gerektirir.</p>
             <div className="story-principles">
               <div><span>01</span><strong>Bilgiyi doğrula</strong><p>Parti ve içerik ayrıntılarını gönderim öncesinde teyit et.</p></div>
               <div><span>02</span><strong>Beklentiyi netleştir</strong><p>Gramaj, paketleme ve teslimat bilgisini açıkça paylaş.</p></div>
               <div><span>03</span><strong>İletişimi kolaylaştır</strong><p>Aracı adımlar yerine WhatsApp üzerinden doğrudan görüş.</p></div>
             </div>
-            <Link className="button button--secondary" href="/hakkimizda">Markayı Tanıyın <ArrowRightIcon /></Link>
+            <Link className="button button--secondary" href="/hakkimizda">Yağmur’un Hikâyesi <ArrowRightIcon /></Link>
           </div>
         </div>
       </section>

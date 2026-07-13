@@ -138,19 +138,44 @@ p { text-wrap: pretty; }
 .site-header { position: relative; z-index: 50; background: rgba(255, 253, 248, .94); border-bottom: 1px solid var(--border); backdrop-filter: blur(12px); }
 .utility-bar { color: var(--cream-100); background: var(--olive-950); font-size: .75rem; }
 .utility-bar__inner { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.utility-bar__proofs, .utility-bar__social a { display: flex; align-items: center; gap: 22px; }
-.utility-bar__proofs span, .utility-bar__social a { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
-.utility-bar__social a:hover { color: var(--cream-300); }
+.utility-bar__proofs { display: flex; align-items: center; gap: 22px; }
+.utility-bar__proofs span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.utility-bar__social { display: flex; align-items: center; gap: 8px; flex: none; }
+.utility-bar__social-link {
+  min-height: 29px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 999px;
+  color: var(--white);
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), 0 7px 18px rgba(0, 0, 0, .12);
+  transition: transform .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.utility-bar__social-link svg { width: 16px; height: 16px; flex: none; }
+.utility-bar__social-link:hover { transform: translateY(-1px); border-color: rgba(255, 255, 255, .35); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 9px 22px rgba(0, 0, 0, .18); }
+.utility-bar__social-link--whatsapp { background: #2f7a4c; }
+.utility-bar__social-link--whatsapp:hover { background: #276c42; }
+.utility-bar__social-link--instagram { background: #9f4f6a; }
+.utility-bar__social-link--instagram:hover { background: #884159; }
 .header-main { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 26px; }
-.brand-logo { display: inline-flex; align-items: center; gap: 11px; flex: none; }
-.brand-logo__mark { width: 62px; height: 62px; display: grid; place-items: center; }
-.brand-logo__mark img { width: 100%; height: 100%; }
-.brand-logo__text { display: flex; flex-direction: column; color: var(--olive-950); font-family: var(--font-display); line-height: .95; letter-spacing: .06em; }
-.brand-logo__text strong { font-size: 1.12rem; }
-.brand-logo__text span { margin-top: 6px; font-size: 1.04rem; text-align: center; }
-.brand-logo--compact .brand-logo__mark { width: 54px; height: 54px; }
-.brand-logo--compact .brand-logo__text strong { font-size: 1rem; }
-.brand-logo--compact .brand-logo__text span { font-size: .95rem; }
+.brand-logo { display: inline-flex; align-items: center; gap: 13px; flex: none; }
+.brand-logo__mark { width: 64px; height: 64px; display: grid; place-items: center; flex: none; }
+.brand-logo__mark img { width: 100%; height: 100%; display: block; object-fit: contain; transition: transform .25s ease; }
+.brand-logo:hover .brand-logo__mark img { transform: translateY(-2px); }
+.brand-logo__text { min-width: 112px; display: flex; flex-direction: column; align-items: center; color: var(--olive-950); line-height: 1; }
+.brand-logo__text strong { font: 600 1.38rem/1 var(--font-display); }
+.brand-logo__text span { width: 100%; display: flex; align-items: center; gap: 7px; margin-top: 8px; color: var(--brown-700); font-size: .62rem; font-weight: 850; letter-spacing: .22em; text-transform: uppercase; }
+.brand-logo__text span::before, .brand-logo__text span::after { content: ""; height: 1px; flex: 1; background: var(--gold-500); opacity: .75; }
+.brand-logo--compact { gap: 11px; }
+.brand-logo--compact .brand-logo__mark { width: 56px; height: 56px; }
+.brand-logo--compact .brand-logo__text { min-width: 102px; }
+.brand-logo--compact .brand-logo__text strong { font-size: 1.22rem; }
+.brand-logo--compact .brand-logo__text span { margin-top: 7px; font-size: .56rem; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(18px, 2.3vw, 34px); margin-left: auto; }
 .desktop-nav a { position: relative; padding: 13px 0; color: var(--brown-900); font-size: .82rem; font-weight: 750; letter-spacing: .025em; }
 .desktop-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 7px; height: 2px; background: var(--olive-700); transition: right .2s ease; }
@@ -481,8 +506,9 @@ p { text-wrap: pretty; }
   .mobile-menu { display: block; }
   .header-main { min-height: 76px; }
   .brand-logo__mark { width: 52px; height: 52px; }
-  .brand-logo__text strong { font-size: .96rem; }
-  .brand-logo__text span { font-size: .9rem; }
+  .brand-logo__text { min-width: 96px; }
+  .brand-logo__text strong { font-size: 1.18rem; }
+  .brand-logo__text span { margin-top: 6px; font-size: .54rem; }
   .hero { padding-top: 52px; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__content { padding: 0; }
@@ -511,14 +537,18 @@ p { text-wrap: pretty; }
 @media (max-width: 680px) {
   .container, .container--narrow, .container--article, .container--policy { width: min(calc(100% - 28px), var(--container)); }
   .section { padding: 64px 0; }
-  .utility-bar__inner { min-height: 34px; }
+  .utility-bar__inner { min-height: 34px; gap: 12px; }
   .utility-bar__proofs span { font-size: .68rem; }
+  .utility-bar__social { gap: 6px; }
+  .utility-bar__social-link { width: 34px; min-height: 30px; justify-content: center; padding: 0; }
+  .utility-bar__social-link svg { width: 17px; height: 17px; }
   .utility-bar__social span { display: none; }
   .header-main { gap: 10px; }
   .brand-logo { gap: 7px; }
   .brand-logo__mark { width: 44px; height: 44px; }
-  .brand-logo__text strong { font-size: .78rem; }
-  .brand-logo__text span { margin-top: 4px; font-size: .74rem; }
+  .brand-logo__text { min-width: 79px; }
+  .brand-logo__text strong { font-size: .98rem; }
+  .brand-logo__text span { gap: 4px; margin-top: 5px; font-size: .45rem; letter-spacing: .17em; }
   .hero { padding: 44px 0 60px; }
   .hero__content h1 { font-size: clamp(3rem, 16vw, 4.4rem); }
   .hero__content h1 em { font-size: .39em; }

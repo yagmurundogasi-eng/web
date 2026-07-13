@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { siteConfig, whatsappHref } from "@/data/site";
-import { InstagramIcon, LeafIcon, MenuIcon, TruckIcon, VillageIcon, WhatsAppIcon } from "./Icons";
+import { InstagramIcon, MenuIcon, TruckIcon, VillageIcon, WhatsAppIcon } from "./Icons";
 import { Logo } from "./Logo";
 
 const navItems = [
@@ -20,15 +20,14 @@ export function Header() {
       <div className="utility-bar">
         <div className="container utility-bar__inner">
           <div className="utility-bar__proofs" aria-label="Marka özellikleri">
-            <span><LeafIcon width={17} height={17} /> Şeffaf içerik bilgisi</span>
-            <span><VillageIcon width={17} height={17} /> Küçük üretici yaklaşımı</span>
-            <span><TruckIcon width={17} height={17} /> Türkiye geneli gönderim bilgisi</span>
+            <span><VillageIcon width={17} height={17} /> Yağmur Hanım’ın girişimi</span>
+            <span><TruckIcon width={17} height={17} /> Türkiye geneli gönderim</span>
           </div>
           <div className="utility-bar__social">
-            <a href={whatsapp} {...(whatsappExternal ? { target: "_blank", rel: "noreferrer" } : {})} aria-label="WhatsApp İletişim">
+            <a className="utility-bar__social-link utility-bar__social-link--whatsapp" href={whatsapp} {...(whatsappExternal ? { target: "_blank", rel: "noreferrer" } : {})} aria-label="WhatsApp İletişim">
               <WhatsAppIcon width={18} height={18} /> <span>WhatsApp: +90 552 423 11 23</span>
             </a>
-            <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" aria-label={`Instagram ${siteConfig.instagramHandle}`}>
+            <a className="utility-bar__social-link utility-bar__social-link--instagram" href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" aria-label={`Instagram ${siteConfig.instagramHandle}`}>
               <InstagramIcon width={18} height={18} /> <span>{siteConfig.instagramHandle}</span>
             </a>
           </div>

@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
-<title id="title">Yağmurun Doğası marka işareti</title>
-<desc id="desc">Daire içinde filiz ve tarla çizgileri</desc>
-<circle cx="64" cy="64" r="58" fill="#f4ecd9" stroke="#415326" stroke-width="4"/>
-<path d="M64 93c0-28 0-47 0-60" fill="none" stroke="#415326" stroke-width="5" stroke-linecap="round"/>
-<path d="M64 55c-18-2-27-11-28-25 17-1 27 7 28 25Z" fill="#73834a" stroke="#415326" stroke-width="3"/>
-<path d="M64 69c18-2 27-11 28-25-17-1-27 7-28 25Z" fill="#a18b51" stroke="#415326" stroke-width="3"/>
-<path d="M25 95c13-8 26-12 39-12s26 4 39 12" fill="none" stroke="#6a4a2c" stroke-width="4" stroke-linecap="round"/>
-<path d="M33 104c10-6 20-9 31-9s21 3 31 9" fill="none" stroke="#a18b51" stroke-width="3" stroke-linecap="round"/>
+  <title id="title">Yağmurun Doğası marka işareti</title>
+  <desc id="desc">D formu içinde yapraklardan oluşan Y monogramı</desc>
+
+  <path d="M18 10h44c36 0 60 21 60 54s-24 54-60 54H18V10Z" fill="#344024"/>
+  <path d="M34 27h28c25.5 0 43 14.2 43 37s-17.5 37-43 37H34V27Z" fill="#faf5e9"/>
+
+  <path d="M47 89c6-3.5 11.7-5 17-5s11.3 1.5 18 5" fill="none" stroke="#b6904b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M64 91V60" fill="none" stroke="#415326" stroke-width="6" stroke-linecap="round"/>
+  <path d="M64 61C53 60 45 52 44 41c11 0 19 7 20 20Z" fill="#6d7e4d"/>
+  <path d="M64 61c2-11 10-18 22-19-1 11-9 18-22 19Z" fill="#b6904b"/>
 </svg>

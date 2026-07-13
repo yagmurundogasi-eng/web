@@ -8,7 +8,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "Yağmurun Doğası | Köy Ürünleri ve Doğal Lezzetler",
+    default: "Yağmurun Doğası | Kaynağı Belli Köy Lezzetleri",
     template: "%s | Yağmurun Doğası",
   },
   description: siteConfig.description,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: "/",
     siteName: siteConfig.name,
-    title: "Yağmurun Doğası | Köy Ürünleri ve Doğal Lezzetler",
+    title: "Yağmurun Doğası | Kaynağı Belli Köy Lezzetleri",
     description: siteConfig.description,
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Yağmurun Doğası" }],
   },
