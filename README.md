@@ -95,6 +95,7 @@ Ardından:
 ## İçerik güncelleme
 
 - Marka ve iletişim ayarları: `src/data/site.ts`
+- Kurumsal kimlik ve marka dili: `BRAND_GUIDE.md`
 - Ürünler ve kategoriler: `src/data/products.ts`
 - Blog yazıları: `src/data/blog.ts`
 - Sık sorulan sorular: `src/data/faq.ts`
@@ -112,6 +113,7 @@ Bununla birlikte stok fotoğraflar, gönderilecek ürünü birebir temsil etmez.
 - Açık ürün yakın planı
 - Tartı üzerinde gerçek gramaj
 - Paketleme süreci
+- Yağmur Hanım’ın kurumsal portresi ve çalışma süreci
 - Üretici ve marka hikâyesi
 - Kargo kolisi ve koruyucu ambalaj
 

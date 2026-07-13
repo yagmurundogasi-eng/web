@@ -4,7 +4,10 @@ Aşağıdaki alanlar işletme sahibi tarafından doğrulanmadan üretim ortamın
 
 ## Marka
 
+- [x] Marka adındaki “Yağmur”un girişimci Yağmur Hanım’ı ifade ettiği
 - [ ] Markanın kuruluş hikâyesi
+- [ ] Yağmur Hanım’ın onaylı kısa biyografisi ve kuruluş yılı
+- [ ] Yağmur Hanım’ın kurumsal portresi
 - [ ] Üretim yapılan il/ilçe/köy
 - [ ] Üretici veya tedarikçi ilişkisi
 - [ ] Kullanılacak resmi logo
