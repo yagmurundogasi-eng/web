@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">Yağmurun Doğası marka işareti</title>
+<desc id="desc">Daire içinde filiz ve tarla çizgileri</desc>
+<circle cx="64" cy="64" r="58" fill="#f4ecd9" stroke="#415326" stroke-width="4"/>
+<path d="M64 93c0-28 0-47 0-60" fill="none" stroke="#415326" stroke-width="5" stroke-linecap="round"/>
+<path d="M64 55c-18-2-27-11-28-25 17-1 27 7 28 25Z" fill="#73834a" stroke="#415326" stroke-width="3"/>
+<path d="M64 69c18-2 27-11 28-25-17-1-27 7-28 25Z" fill="#a18b51" stroke="#415326" stroke-width="3"/>
+<path d="M25 95c13-8 26-12 39-12s26 4 39 12" fill="none" stroke="#6a4a2c" stroke-width="4" stroke-linecap="round"/>
+<path d="M33 104c10-6 20-9 31-9s21 3 31 9" fill="none" stroke="#a18b51" stroke-width="3" stroke-linecap="round"/>
+</svg>
