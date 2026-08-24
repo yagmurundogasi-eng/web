@@ -208,7 +208,13 @@ p { text-wrap: pretty; }
 .footer-contact svg { width: 18px; height: 18px; margin-top: 4px; flex: none; color: var(--olive-700); }
 .footer-bottom { border-top: 1px solid var(--border); }
 .footer-bottom__inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .78rem; }
-.footer-bottom__inner span:last-child { display: inline-flex; align-items: center; gap: 7px; }
+.footer-bottom__note { display: inline-flex; align-items: center; gap: 7px; }
+/* Ajans imzası: markadan baskın olmamalı; footer'ın soluk tonunda kalır. */
+.footer-credit { flex: none; }
+.footer-credit a { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+.footer-credit a img { opacity: .75; transition: opacity .2s ease; }
+.footer-credit a:hover { color: var(--olive-800); }
+.footer-credit a:hover img { opacity: 1; }
 
 /* Hero */
 .hero { position: relative; overflow: hidden; padding: 72px 0 80px; background: radial-gradient(circle at 16% 25%, rgba(230, 216, 185, .6), transparent 32%), linear-gradient(120deg, var(--cream-50), #f6eddd); }
